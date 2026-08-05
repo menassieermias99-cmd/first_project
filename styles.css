@@ -6,7 +6,49 @@
   padding: 0;
   box-sizing: border-box;
 
+  /* font upated */
   font-family: "Inter", sans-serif;
 }
 
-/*  */
+/* Stylings */
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+  color: #f8fafc; /* light contrast text */
+  min-height: 100vh;
+
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  margin: 10px 0;
+}
+
+input {
+  padding: 1rem;
+  font: 1rem;
+  min-width: 400px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  border: 2px solid #f8fafc;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  border: 1px solid #f8fafc;
+}
