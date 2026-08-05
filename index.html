@@ -1,26 +1,45 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple to do list</title>
+    <title>Simple To-Do List</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>What are the plans for today?</h1>
-    </header>
-    <main>
-      <input type="text" placeholder="e.g. wash clothes, apply to jobs" />
-      <button>Add</button>
-      <div>
-        <h2>Still to do</h2>
-        <section id="to-do"></section>
-        <h2>Done(wooo whooo)</h2>
-        <section id="done"></section>
-      </div>
-    </main>
-    <footer></footer>
+    <div class="app-container">
+      <header>
+        <h1>What are the plans for today?</h1>
+      </header>
+
+      <main>
+        <form id="todo-form">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="e.g. wash clothes, apply to jobs"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="add-btn">Add</button>
+        </form>
+
+        <div class="task-lists">
+          <section>
+            <h2>Still to do</h2>
+            <ul id="to-do" class="task-list"></ul>
+          </section>
+
+          <section>
+            <h2>Done (wooo whooo 🎉)</h2>
+            <ul id="done" class="task-list"></ul>
+          </section>
+        </div>
+      </main>
+
+      <footer></footer>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
